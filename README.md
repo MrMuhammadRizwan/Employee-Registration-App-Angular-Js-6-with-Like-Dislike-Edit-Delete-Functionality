@@ -2,8 +2,7 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.1.
 
-## Application demo
-https://www.dropbox.com/s/lsdhveinoqe4re9/Employee%20Registration%20App%20with%20Like%20Dislike%20Edit%20Delete%20Functionality.gif?dl=0
+## Application demo >> https://www.dropbox.com/s/lsdhveinoqe4re9/Employee%20Registration%20App%20with%20Like%20Dislike%20Edit%20Delete%20Functionality.gif?dl=0
 
 ## Development server
 
