@@ -1,0 +1,68 @@
+@import url('https://unpkg.com/bootstrap@3.3.7/dist/css/bootstrap.min.css');
+body{
+  padding: 0 30px;
+}
+.input-feild{
+      width: 247px;
+      border: 1px solid #FF9800;
+}
+.input-feild-full{
+    width: 100%;
+    max-width: 383px;
+    margin-top: 6px;
+}
+.save-btn{
+    width: 91px;
+    background: #FF9800;
+    border: 0;
+    line-height: 24px;
+}
+.edit-btn{
+    padding: 2px 10px;
+    background: #2196F3;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.delete-btn{
+    padding: 2px 10px;
+    background: #d40e00;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 16px;
+    cursor: pointer;
+}
+.name{
+    width: 120px;
+    display: inline-block;
+    overflow: hidden;
+}
+.badge{
+    border-radius: 0;
+    background: #b5b5b5;
+    width: 30px;
+    display: inline-block;
+}
+ul{
+  list-style: none;
+  padding: 0;
+}
+li{
+  margin: 5px 0;
+}
+.like{
+    display: inline-block;
+    background: green;
+    color: white;
+    padding: 0 5px;
+    width:57px;
+    cursor: pointer;
+}
+.dislike{
+    display: inline-block;
+    background: #F44336;
+    color: white;
+    padding: 0 5px;
+    width: 71px;
+    cursor: pointer;
+}

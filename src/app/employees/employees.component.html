@@ -1,0 +1,37 @@
+<!-- <input [formControl]="name" type="text" placeholder="name" formControlName="name">
+<button (click)="onAdd(addList)">Add New</button> -->
+<p>Total Employes Are: {{lists.length}} </p>
+
+<form [formGroup]="heroForm" (ngSubmit)="onSubmit()">
+	<input placeholder="New Employee Name..." formControlName="name" class="input-feild">
+	<!-- <div *ngIf="name.errors.required">
+        Name is required.
+      </div>
+      <div *ngIf="name.errors.minlength">
+        Name must be at least 4 characters long.
+      </div> -->
+	<input type="submit" class="save-btn">
+</form>
+
+<!-- <input placeholder="Search Employee Name..." [(ngModel)]="searchText" class="input-feild-full"> -->
+
+<ul class="lists">
+	<li *ngFor="let list of lists; let i = index" [class.selected]="list === selectedList">
+		<span class="name">{{list.name}}</span>
+		<span class="like" (click)="onLike(list)">{{list.like}} Like</span>
+		<span class="dislike" (click)="onDislike(list)">{{list.dislike}} Dislike</span>
+		<span class="edit-btn" (click)="onSelect(list)">Edit</span>
+		<span class="delete-btn" (click)="onDelete(list,i)">X</span>
+	</li>
+</ul>
+
+<div *ngIf="selectedList">
+	<h2>Edit:-</h2>
+	<div>Edit Employee <span>id: </span>{{selectedList.id}}</div>
+	<div>
+		<label>name:
+      <input [(ngModel)]="selectedList.name" placeholder="name">
+    </label>
+	</div>
+
+</div>
